@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	myMath "go-samples/utils"
 	"reflect"
 )
 
@@ -133,4 +134,10 @@ func main() {
 	}
 
 	delete(fooMap, 2)
+
+	// ------------------------------------------ Toolkit ------------------------------------------ //
+
+	// call functions from different packages
+	myTotal := myMath.Add(1, 2, 3, 4, 5)
+	fmt.Println("myTotal=", myTotal)
 }
